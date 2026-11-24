@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>墨页 · Markdown 笔记</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="mark" aria-hidden="true">M↓</span>墨页</div>
+    <button id="download"><span aria-hidden="true">↓</span> 下载 Markdown</button>
+  </header>
+  <main>
+    <div class="title"><h1>我的笔记</h1><small id="status" role="status"></small></div>
+    <div class="workspace">
+      <section><h2><i aria-hidden="true">#</i><label for="source">Markdown 编辑</label></h2>
+        <textarea id="source" spellcheck="false" placeholder="从这里开始记录…"></textarea>
+      </section>
+      <section><h2><i aria-hidden="true">¶</i>实时预览</h2><article id="preview" aria-label="笔记预览" tabindex="0"></article></section>
+    </div>
+  </main>
+</body>
+</html>
